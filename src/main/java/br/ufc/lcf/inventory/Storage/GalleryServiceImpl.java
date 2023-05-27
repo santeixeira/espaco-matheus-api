@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 
 @Slf4j
 @Service
@@ -13,6 +15,12 @@ import org.springframework.web.multipart.MultipartFile;
 public class GalleryServiceImpl implements GalleryService {
 
     private final GalleryRepository galleryRepo;
+
+    @Override
+    public List<Gallery> getAllImages() {
+        return galleryRepo.findAll();
+    }
+
 
     @Override
     public Gallery uploadFile(MultipartFile file, GalleryDTO galleryDTO) {
