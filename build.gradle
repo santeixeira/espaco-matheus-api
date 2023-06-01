@@ -7,7 +7,7 @@ plugins {
 group = 'br.ufc.lcf'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
-jar { manifest { attributes('Main-Class': 'br.ufc.lcf.InventoryApplication') } }
+jar { manifest { attributes('Main-Class': 'br.ufc.lcf.Inventory') } }
 
 configurations {
     compileOnly {
