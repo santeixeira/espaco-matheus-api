@@ -18,7 +18,7 @@ public class GalleryServiceImpl implements GalleryService {
 
     @Override
     public List<Gallery> getAllImages() {
-        return galleryRepo.findAll();
+        return galleryRepo.getAll();
     }
 
 
