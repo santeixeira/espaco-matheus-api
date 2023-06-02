@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Controller
-@CrossOrigin(value = "http://matheuscarneiro.art")
+@CrossOrigin(value = "https://matheuscarneiro.netlify.app/")
 @RequiredArgsConstructor
 @RequestMapping("/api")
 public class GalleryController {
