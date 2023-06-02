@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 
-@CrossOrigin(value = "https://matheuscarneiro.netlify.app/")
+@CrossOrigin(value = {"https://matheuscarneiro.netlify.app", "https://matheuscarneiro.art"})
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/api")
