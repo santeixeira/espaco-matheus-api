@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 
-@CrossOrigin(value = "${front_url}")
+@CrossOrigin(value = "https://matheuscarneiro.netlify.app/")
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/api")
