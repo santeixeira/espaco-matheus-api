@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Controller
-@CrossOrigin(value = "http://localhost:3000")
+@CrossOrigin(value = "${front_url}")
 @RequiredArgsConstructor
 @RequestMapping("/api")
 public class GalleryController {
