@@ -1,11 +1,13 @@
-package br.ufc.lcf.inventory.Postal;
+package br.ufc.lcf.inventory.controllers;
 
+import br.ufc.lcf.inventory.model.Postal;
+import br.ufc.lcf.inventory.services.PostalService;
 import br.ufc.lcf.inventory.Util.General;
+import br.ufc.lcf.inventory.entity.PostalDTO;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +20,7 @@ import java.net.URI;
 @RequestMapping("/api")
 public class PostalController {
 
-  @Autowired
-  private PostalService postalService;
+  private final PostalService postalService;
 
   @GetMapping("/postal")
   public ResponseEntity<Page<Postal>> index(@RequestParam int page) {

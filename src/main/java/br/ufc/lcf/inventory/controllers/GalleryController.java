@@ -1,5 +1,8 @@
-package br.ufc.lcf.inventory.Storage;
+package br.ufc.lcf.inventory.controllers;
 
+import br.ufc.lcf.inventory.entity.GalleryDTO;
+import br.ufc.lcf.inventory.services.GalleryService;
+import br.ufc.lcf.inventory.model.Gallery;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

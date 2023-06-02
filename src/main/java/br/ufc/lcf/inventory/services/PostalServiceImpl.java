@@ -1,5 +1,9 @@
-package br.ufc.lcf.inventory.Postal;
+package br.ufc.lcf.inventory.services;
 
+import br.ufc.lcf.inventory.entity.PostalDTO;
+import br.ufc.lcf.inventory.model.Postal;
+import br.ufc.lcf.inventory.repository.PostalRepository;
+import br.ufc.lcf.inventory.services.PostalService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,13 +11,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.mongodb.repository.Query;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -22,8 +24,7 @@ import java.util.List;
 @Slf4j
 public class PostalServiceImpl implements PostalService {
 
-    @Autowired
-    private PostalRepository postalRepository;
+    private final PostalRepository postalRepository;
 
     @Override
     public Page<Postal> getAll(int page) {

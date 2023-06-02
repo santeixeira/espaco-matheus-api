@@ -1,5 +1,6 @@
-package br.ufc.lcf.inventory.Storage;
+package br.ufc.lcf.inventory.repository;
 
+import br.ufc.lcf.inventory.model.Gallery;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

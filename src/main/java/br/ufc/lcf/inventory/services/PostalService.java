@@ -1,7 +1,8 @@
-package br.ufc.lcf.inventory.Postal;
+package br.ufc.lcf.inventory.services;
 
+import br.ufc.lcf.inventory.entity.PostalDTO;
+import br.ufc.lcf.inventory.model.Postal;
 import org.springframework.data.domain.Page;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package br.ufc.lcf.inventory.Storage;
+package br.ufc.lcf.inventory.Util;
 
 import java.io.ByteArrayOutputStream;
 import java.util.zip.Deflater;

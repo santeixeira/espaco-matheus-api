@@ -1,4 +1,4 @@
-package br.ufc.lcf.inventory.Postal;
+package br.ufc.lcf.inventory.entity;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

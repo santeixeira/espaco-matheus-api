@@ -1,4 +1,8 @@
-package br.ufc.lcf.inventory.Storage;
+package br.ufc.lcf.inventory.services;
+import br.ufc.lcf.inventory.Util.GalleryUtil;
+import br.ufc.lcf.inventory.entity.GalleryDTO;
+import br.ufc.lcf.inventory.model.Gallery;
+import br.ufc.lcf.inventory.repository.GalleryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

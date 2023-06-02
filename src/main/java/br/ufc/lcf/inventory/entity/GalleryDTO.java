@@ -1,4 +1,4 @@
-package br.ufc.lcf.inventory.Storage;
+package br.ufc.lcf.inventory.entity;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
