@@ -20,7 +20,7 @@ public class NewsServiceImpl implements NewsService {
 
     @Override
     public List<News> getAll() {
-        return newsRepository.findAll(Sort.by("date"));
+        return newsRepository.findAll(Sort.by("date").descending());
     }
 
     @Override
@@ -42,5 +42,10 @@ public class NewsServiceImpl implements NewsService {
     @Override
     public News getByTitle(String title) {
         return newsRepository.findByTitle(title);
+    }
+
+    @Override
+    public News getById(String id) {
+        return newsRepository.findById(id).orElseThrow();
     }
 }

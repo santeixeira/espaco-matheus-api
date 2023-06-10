@@ -25,9 +25,9 @@ public class NewsController {
         return ResponseEntity.ok().body(newsService.getAll());
     }
 
-    @GetMapping("/noticia/{title}")
-    public ResponseEntity<News> getByTitle(@PathVariable String title) {
-        return ResponseEntity.ok().body(newsService.getByTitle(title));
+    @GetMapping("/noticia/{id}")
+    public ResponseEntity<News> getById(@PathVariable String id) {
+        return ResponseEntity.ok().body(newsService.getById(id));
     }
 
     @PostMapping("/noticia/create")
