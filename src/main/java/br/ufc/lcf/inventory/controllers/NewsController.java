@@ -39,6 +39,7 @@ public class NewsController {
 
     @DeleteMapping("/noticia/delete/{id}")
     public ResponseEntity<?> deleteNew(@PathVariable String id) {
+        newsService.deleteNews(id);
         return ResponseEntity.ok().build();
     }
 }
