@@ -7,6 +7,6 @@ RUN ./gradlew bootJar --no-daemon
 
 FROM openjdk:17-jdk-slim
 EXPOSE 8081
-COPY --from=build /build/libs/api-1.jar app.jar
+COPY --from=build /build/libs/api-0.0.1-SNAPSHOT-plain.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
